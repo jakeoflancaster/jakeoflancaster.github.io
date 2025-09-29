@@ -1,12 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Name – Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Director of Engineering & Co-Founder</p>
-  <p>Welcome to my portfolio site! This is where I’ll showcase projects in defense systems, rockets, and undersea technology.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Director of Engineering & Co-Founder — Defense Systems</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am the Director of Engineering & Co-Founder of a defense technology startup.  
+      I lead technical strategy, R&D, and operations, and we are in advanced stages of contract procurement.  
+      My domain expertise includes ordnance systems, rocket design, and undersea warfare systems development.</p>
+      <p>Technical skills: FEA, CFD, telemetry & data integration, systems engineering, hydrodynamics, GNC (if applicable), defense compliance (ITAR, CMMC), stakeholder negotiations, etc.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects & Highlights</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Advanced Rocket Launcher</h3>
+          <p>Designed and tested rocket systems, integrated telemetry data for performance, utilized FEA for structural integrity and CFD for aerodynamic optimization.</p>
+        </div>
+        <div class="project-card">
+          <h3>Undersea Warfare Systems</h3>
+          <p>Developed concept and design for subsea systems using hydrodynamic CFD, structural analysis, and acoustic modeling.</p>
+        </div>
+        <div class="project-card">
+          <h3>Business & Contract Development</h3>
+          <p>Facilitated negotiations with government, international clients, investors, and congressional reps. Positioned the company for near-term contracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/YOUR_USERNAME">YOUR_USERNAME</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="curYear"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('curYear').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
