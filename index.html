@@ -3,64 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name – Portfolio</title>
+  <title>Your Name • Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
+  <header class="hero">
+    <div class="hero-content">
       <h1>Your Name</h1>
-      <p>Director of Engineering & Co-Founder — Defense Systems</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <p>Director of Engineering & Co-Founder | Defense Systems</p>
+      <div class="button-group">
+        <a class="btn" href="resume.pdf" target="_blank">Resume</a>
+        <a class="btn" href="#papers">Papers</a>
+        <a class="btn" href="#projects">Projects</a>
+      </div>
     </div>
   </header>
 
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am the Director of Engineering & Co-Founder of a defense technology startup.  
-      I lead technical strategy, R&D, and operations, and we are in advanced stages of contract procurement.  
-      My domain expertise includes ordnance systems, rocket design, and undersea warfare systems development.</p>
-      <p>Technical skills: FEA, CFD, telemetry & data integration, systems engineering, hydrodynamics, GNC (if applicable), defense compliance (ITAR, CMMC), stakeholder negotiations, etc.</p>
-    </div>
-  </section>
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I lead technical strategy and operations at a defense technology startup, currently in advanced procurement stages. Domain expertise: ordnance and rocket systems, undersea warfare, telemetry & FEA/CFD.</p>
+      </div>
+    </section>
 
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2>Projects & Highlights</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Advanced Rocket Launcher</h3>
-          <p>Designed and tested rocket systems, integrated telemetry data for performance, utilized FEA for structural integrity and CFD for aerodynamic optimization.</p>
-        </div>
-        <div class="project-card">
-          <h3>Undersea Warfare Systems</h3>
-          <p>Developed concept and design for subsea systems using hydrodynamic CFD, structural analysis, and acoustic modeling.</p>
-        </div>
-        <div class="project-card">
-          <h3>Business & Contract Development</h3>
-          <p>Facilitated negotiations with government, international clients, investors, and congressional reps. Positioned the company for near-term contracts.</p>
+    <section id="papers" class="section papers">
+      <div class="container">
+        <h2>Papers</h2>
+        <div class="cards">
+          <!-- Copy this card for each paper -->
+          <div class="card">
+            <h3>Paper Title</h3>
+            <p><em>Journal / Conference, Year</em></p>
+            <p>Short summary: 1–2 sentences of what is new/impactful.</p>
+            <p><a href="assets/papers/paper.pdf" target="_blank" class="read-more">Read full paper →</a></p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/YOUR_USERNAME">YOUR_USERNAME</a></p>
-    </div>
-  </section>
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <!-- Copy this card for each project -->
+          <div class="card">
+            <h3>Project Name</h3>
+            <p>Role: Lead / Architect • Technologies: FEA, CFD, Telemetry, etc.</p>
+            <p>Impact summary: what problem you solved, key result or metric.</p>
+            <p><a href="projects/project-detail.html" class="read-more">Read more →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/YOUR_USERNAME">YOUR_USERNAME</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="curYear"></span> Your Name. All rights reserved.</p>
+      <p>© <span id="curYear"></span> Your Name</p>
     </div>
   </footer>
 
